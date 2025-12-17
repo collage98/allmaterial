@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AllBooks Study Portal</title>
+
+<style>
+*{box-sizing:border-box;font-family:Segoe UI,Arial}
+a{text-decoration:none;color:inherit}
+
+/* DARK MODE */
+body{
+  margin:0;
+  background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+  color:#e5e7eb;
+}
+.header{
+  background:#020617;
+  color:#fff;
+  padding:15px 20px;
+  font-size:18px;
+  font-weight:600;
+}
+.container{
+  display:flex;
+  min-height:calc(100vh - 90px);
+}
+.sidebar{
+  width:240px;
+  background:#020617;
+  border-right:1px solid #1f2933;
+  padding:15px;
+}
+.folder{
+  padding:10px;
+  border-radius:6px;
+  color:#cbd5e1;
+}
+.folder:hover{background:#1e293b}
+.main{
+  flex:1;
+  padding:20px;
+  background:#0b1220;
+}
+.page{display:none}
+.page:target{display:block}
+#home{display:block}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+  gap:15px;
+}
+.card{
+  background:#020617;
+  border:1px solid #1f2933;
+  border-radius:12px;
+  padding:16px;
+  text-align:center;
+}
+.card:hover{background:#1e293b}
+
+.back{
+  display:inline-block;
+  margin-bottom:15px;
+  padding:6px 14px;
+  background:#2563eb;
+  color:#fff;
+  border-radius:20px;
+  font-size:14px;
+}
+
+.unit{
+  background:linear-gradient(135deg,#16a34a,#22c55e);
+  color:#fff;
+  padding:12px;
+  border-radius:12px;
+  margin:10px 0;
+}
+.unit:hover{opacity:.9}
+
+footer{
+  background:#020617;
+  color:#94a3b8;
+  text-align:center;
+  padding:10px;
+  font-size:13px;
+  border-top:1px solid #1f2933;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">📁 AllBooks – Study Portal</div>
+
+<div class="container">
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+  <h4>THIS PC</h4>
+  <a href="#sem1"><div class="folder">📁 SEM I</div></a>
+  <a href="#sem2"><div class="folder">📁 SEM II</div></a>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+<div id="home" class="page">
+  <h3>Welcome</h3>
+  <div class="grid">
+    <a href="#sem1"><div class="card">SEM I</div></a>
+    <a href="#sem2"><div class="card">SEM II</div></a>
+  </div>
+</div>
+
+<!-- SEM I SUBJECTS -->
+<div id="sem1" class="page">
+<a href="#home" class="back">⬅ Back</a>
+<h3>SEM I Subjects</h3>
+<div class="grid">
+<a href="#cs"><div class="card">CS</div></a>
+<a href="#cmt"><div class="card">CMT</div></a>
+<a href="#fm"><div class="card">FM</div></a>
+<a href="#pmp"><div class="card">PMP</div></a>
+<a href="#wd1"><div class="card">WD I</div></a>
+<a href="#ip1"><div class="card">IP I</div></a>
+<a href="#oat"><div class="card">OAT</div></a>
+</div>
+</div>
+
+<!-- SEM II SUBJECTS -->
+<div id="sem2" class="page">
+<a href="#home" class="back">⬅ Back</a>
+<h3>SEM II Subjects</h3>
+<div class="grid">
+<a href="#ip2"><div class="card">IP II</div></a>
+<a href="#ma"><div class="card">MA</div></a>
+<a href="#wd2"><div class="card">WD II</div></a>
+<a href="#fa"><div class="card">FA</div></a>
+<a href="#pe"><div class="card">PE</div></a>
+<a href="#ews"><div class="card">EWS</div></a>
+<a href="#it"><div class="card">IT</div></a>
+</div>
+</div>
+
+<!-- SEM I UNITS (ALL PREVIEW LINKS) -->
+<div id="cs" class="page"><a href="#sem1" class="back">⬅ Back</a><h3>CS</h3>
+<a href="https://drive.google.com/file/d/1GVDIFh22aYk5s-I8Ws_S6ZS05Pwvx9HP/preview" target="_blank"><div class="unit">Unit 1</div></a>
+<a href="https://drive.google.com/file/d/1wMW0BKtpsyWSyk5ptrMYTZ_pe86tbQI_/preview" target="_blank"><div class="unit">Unit 2</div></a>
+<a href="https://drive.google.com/file/d/13m9FyklDiOEDwv8zJJLIFEiysqVcSUZH/preview" target="_blank"><div class="unit">Unit 3</div></a>
+<a href="https://drive.google.com/file/d/1GpCJFAt9h-qzuzvcM680V5LViEPISkCR/preview" target="_blank"><div class="unit">Unit 4</div></a>
+<a href="https://drive.google.com/file/d/1icFF0HpzG5swuHjVXhZM6K5TLd6FjDdy/preview" target="_blank"><div class="unit">Unit 5</div></a>
+</div>
+
+<div id="cmt" class="page"><a href="#sem1" class="back">⬅ Back</a><h3>CMT</h3>
+<a href="https://drive.google.com/file/d/1wRsQwX1IP0BR1BpigMxfvc903YeT-7Tj/preview"><div class="unit">Unit 1</div></a>
+<a href="https://drive.google.com/file/d/13dXKtUB9TsZaj7eNaokJHbJRkdYamRoR/preview"><div class="unit">Unit 2</div></a>
+<a href="https://drive.google.com/file/d/1fsB7e32_Nxy1TscbG67C4GkbsNMbV2ke/preview"><div class="unit">Unit 3</div></a>
+<a href="https://drive.google.com/file/d/1LD_XIbQ5Orf2jIFctyhaWRDiiWKVyyKU/preview"><div class="unit">Unit 4</div></a>
+<a href="https://drive.google.com/file/d/12d2oJZ_x4WbPmOUy1WePacFtHddxUV1D/preview"><div class="unit">Unit 5</div></a>
+</div>
+
+<div id="fm" class="page"><a href="#sem1" class="back">⬅ Back</a><h3>FM</h3>
+<a href="https://drive.google.com/file/d/1dbr7n7FWb5dFV5B_0Zqu0U0YOGVCDKrb/preview"><div class="unit">Unit 1</div></a>
+<a href="https://drive.google.com/file/d/1GvEL3FzOCk5QgrduP754Eh1oeaDoZt8Y/preview"><div class="unit">Unit 2</div></a>
+<a href="https://drive.google.com/file/d/1lfrlytCXUhN1RMZBuG9M3KZGFGy1Tr38/preview"><div class="unit">Unit 3</div></a>
+<a href="https://drive.google.com/file/d/1nO_r2Y9Wcwg1rRXzIawy00OtkDhH83Ai/preview"><div class="unit">Unit 4 & 5</div></a>
+</div>
+
+<div id="pmp" class="page"><a href="#sem1" class="back">⬅ Back</a><h3>PMP</h3>
+<a href="https://drive.google.com/file/d/1eKsaGZhYsG5jQPUn0T21FzdxGD_Fs2sq/preview"><div class="unit">Unit 1</div></a>
+</div>
+
+<div id="wd1" class="page"><a href="#sem1" class="back">⬅ Back</a><h3>WD I</h3>
+<a href="https://drive.google.com/file/d/1uCbDAZ7FPIzw457GWvEBRQP7tf4PaGOH/preview"><div class="unit">Unit 1</div></a>
+<a href="https://drive.google.com/file/d/1YwSkbS4jXcVFJpQ4TyO-fTERIDaox6kl/preview"><div class="unit">Unit 2</div></a>
+<a href="https://drive.google.com/file/d/1xcckfZaz9LiQGZcsjvUEr8tvYxX-45oS/preview"><div class="unit">Unit 3</div></a>
+<a href="https://drive.google.com/file/d/1H1zfmYgV6HXKMeCJwSf8e136ZBeEa0jI/preview"><div class="unit">Unit 4</div></a>
+<a href="https://drive.google.com/file/d/1jLdZZab9dzj5DF0q-lZM34RLSaeJDFuY/preview"><div class="unit">Unit 5</div></a>
+</div>
+
+<div id="ip1" class="page"><a href="#sem1" class="back">⬅ Back</a><h3>IP I</h3>
+<a href="https://drive.google.com/file/d/1gneYiMGic2P52Ji6iiY59GgOrmaUTcjR/preview"><div class="unit">Unit 1</div></a>
+<a href="https://drive.google.com/file/d/1pbumBaHEkbsG3ep8FxIkxYk7ZZu8e-xc/preview"><div class="unit">Unit 2</div></a>
+<a href="https://drive.google.com/file/d/11k8eUGwHIAinVIDXTDnPnc5Lm274iMdK/preview"><div class="unit">Unit 3</div></a>
+<a href="https://drive.google.com/file/d/17X4KtVHBeSQei3VAUlfA-_grcUcdBkgy/preview"><div class="unit">Unit 4</div></a>
+<a href="https://drive.google.com/file/d/1kefMgw25uLNSZhQebjFtm_Sned0roMvj/preview"><div class="unit">Unit 5</div></a>
+</div>
+
+<div id="oat" class="page"><a href="#sem1" class="back">⬅ Back</a><h3>OAT</h3>
+<a href="https://drive.google.com/file/d/1U7rG2Pkn8ywedc5wyE1iiS5SX41IZ0wu/preview"><div class="unit">Unit 1</div></a>
+<a href="https://drive.google.com/file/d/1XOfwTw43AoEZuRdcivM6q4JpSFugwqh1/preview"><div class="unit">Unit 2</div></a>
+<a href="https://drive.google.com/file/d/1Ws3nwvKKrC3rlBnBojseI4PE-K68gdSL/preview"><div class="unit">Unit 3</div></a>
+<a href="https://drive.google.com/file/d/1AwwMkUs3h0lJ0e7phGofO7wIXvdadyAP/preview"><div class="unit">Unit 4</div></a>
+<a href="https://drive.google.com/file/d/1G-_S1Ato7Vjg5BksJDoL1li26gxE8c0o/preview"><div class="unit">Unit 5</div></a>
+</div>
+
+<!-- SEM II UNITS (REMAINING ADDED AS PREVIEW PLACEHOLDER) -->
+<div id="ip2" class="page"><a href="#sem2" class="back">⬅ Back</a><h3>IP II</h3>
+<a href="https://drive.google.com/file/d/1bC4cJyROK9l_L5IEXxsyrrqccpOrIM2m/preview"><div class="unit">Unit 1</div></a>
+<a href="https://drive.google.com/file/d/1uWvdG8wXEeRvzrDQcOS6GZbiYREZSTmp/preview"><div class="unit">Unit 2</div></a>
+<a href="https://drive.google.com/file/d/1wY2geQOw2AQTpdDUmhAZHUbUyqqLwCOi/preview"><div class="unit">Unit 3</div></a>
+</div>
+
+<div id="ma" class="page"><a href="#sem2" class="back">⬅ Back</a><h3>MA</h3>
+<div class="unit">Add Drive Preview Links</div>
+</div>
+
+<div id="wd2" class="page"><a href="#sem2" class="back">⬅ Back</a><h3>WD II</h3>
+<div class="unit">Add Drive Preview Links</div>
+</div>
+
+<div id="fa" class="page"><a href="#sem2" class="back">⬅ Back</a><h3>FA</h3>
+<a href="https://drive.google.com/file/d/1RXBX-cdx0Jp4LRRevDv3VN1V1R5VcIHK/preview"><div class="unit">Unit 1</div></a>
+<a href="https://drive.google.com/file/d/1UfP_QPutWsJQtmGQ3vi-4BC1e8c00drr/preview"><div class="unit">Unit 2</div></a>
+<a href="https://drive.google.com/file/d/1T9Yt7vC5dQEAgK0Sm5xvwA_mbk5G3YAk/preview"><div class="unit">Unit 3</div></a>
+</div>
+
+<div id="pe" class="page"><a href="#sem2" class="back">⬅ Back</a><h3>PE</h3>
+<div class="unit">Add Drive Preview Links</div>
+</div>
+
+<div id="ews" class="page"><a href="#sem2" class="back">⬅ Back</a><h3>EWS</h3>
+<div class="unit">Add Drive Preview Links</div>
+</div>
+
+<div id="it" class="page"><a href="#sem2" class="back">⬅ Back</a><h3>IT</h3>
+<div class="unit">Add Drive Preview Links</div>
+</div>
+
+</div>
+</div>
+
+<footer>
+© 2025 | Website Created by <b>Jigar,Jumil & Niv </b>
+</footer>
+
+</body>
+</html>
